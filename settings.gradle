@@ -1,0 +1,4 @@
+include ':gmotecommon'
+include ':gmoteclient'
+include ':gmoteserver'
+include ':gmoteupdater'

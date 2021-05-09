@@ -1,0 +1,22 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+application {
+    mainClassName = 'org.gmote.server.GmoteServerUiWindows'
+}
+
+dependencies {
+    implementation project(':gmotecommon')
+    implementation project(':gmoteupdater')
+
+    implementation 'org.slf4j:slf4j-api:1.5.3'
+    implementation 'nl.junglecomputing:sbbi-upnplib:1.0.4'
+    implementation 'commons-logging:commons-logging-api:1.1'
+    implementation 'commons-logging:commons-logging:1.1'
+    implementation 'commons-jxpath:commons-jxpath:1.1'
+    implementation 'org.blinkenlights.jid3:JID3:0.46'
+    implementation 'com.apple:AppleJavaExtensions:1.4'
+    implementation 'uk.co.caprica:vlcj:4.7.1'
+
+    testImplementation 'junit:junit:4.13.2'
+}
